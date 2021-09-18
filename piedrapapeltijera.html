@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+     <meta charset="utf-8" />
+<title>Piedra, papel o Tijera</title>
+<script type="text/javascript" src="piedrapelpatijereta.js">
+</script>
+<style>
+ h1{
+ 	color: royalblue;
+ }
+ h2{
+ 	color: darkred;
+ }
+
+</style>
+
+</head>
+<style>
+	body{
+		-webkit-animation: colorchange 60s infinite; 
+    animation: colorchange 60s infinite;
+	}
+	@-webkit-keyframes colorchange {
+     0%  {background: #33FFF3;}
+    25%  {background: #78281F;}
+    50%  {background: #117A65;}
+    75%  {background: #DC7633;}
+    100% {background: #9B59B6;}
+     }
+     @keyframes colorchange {
+     0%  {background: #33FFF3;}
+    25%  {background: #78281F;}
+    50%  {background: #117A65;}
+    75%  {background: #DC7633;}
+    100% {background: #9B59B6;}
+}   
+</style>
+<body>
+
+	<h1><center>Jan Ken Pon!</center></h1>
+	<h2><center>Selecciona un boton para comenzar el juego </center></h2>
+	<center><button onclick='jugar("Tijera")'><img src="tijera.jpg" alt="x" height="42" /></center></button>
+	<center><button onclick='jugar("Piedra")'><img src="piedra.jpg" alt="x"height="42" /></center></button>
+	<center><button onclick='jugar("Papel")'><img src="papel.jpg" alt="x"height="42" /></center></button>
+	<div class="clase" id="tabla"> <center>A jugar </center>
+	</div>
+	<script type="text/javascript" src="piedrapelpatijereta.js">
+	</script>
+</body>
+</style>
+</html>
